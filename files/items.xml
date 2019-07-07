@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+        <item>
+                <id>1</id>
+                <name>Item 1</name>
+                <distributor>Item A</distributor>
+        </item>
+        <item>
+                <id>12</id>
+                <name>Item 2</name>
+                <distributor>Distributor B</distributor>
+        </item>
+        <item>
+                <id>54</id>
+                <name>Item 3</name>
+                <distributor>Distributor A</distributor>
+        </item>
+        <item>
+                <id>3003</id>
+                <name>Item 4</name>
+                <distributor>Distributor B</distributor>
+        </item>
+        <item>
+                <id>86</id>
+                <name>Item 5</name>
+                <distributor>Distributor B</distributor>
+        </item>
+        <item>
+                <id>1000</id>
+                <name>Item 6</name>
+                <distributor>Distributor C</distributor>
+        </item>
+</items>
