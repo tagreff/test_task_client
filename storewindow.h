@@ -27,7 +27,6 @@ public slots:
 
 signals:
     void storeWindowClosed();
-//    void readyRead();
 
 private slots:
     void on_StoreWindow_rejected();
@@ -35,15 +34,22 @@ private slots:
     void on_fileOpenButton_clicked();
     void on_sendRequestButton_clicked();
     void highlightChecked(QListWidgetItem* item);
+    void getConnectionAttributes();
+    void clearPickedItems();
+
+    void on_resetButton_clicked();
 
 private:
      Ui::StoreWindow *ui;
      QString address;
+     quint16 port;
      QTcpSocket *tcpSocket = nullptr;
      QList<QString> pickedItems;
      QListWidget *listWidget;
      QListWidgetItem* itemsList;
      QDomNodeList items;
+     bool connectionState;
+     bool fileLoadState;
 
 };
 

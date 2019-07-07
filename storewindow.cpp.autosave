@@ -107,7 +107,6 @@ void StoreWindow::highlightChecked(QListWidgetItem *item){
     if(item->checkState() == Qt::Checked)
     {
         pickedItems.append(item->text());// добавляем выбранные элементы в QList
-        qDebug() << item->text();
     }
     else{
          pickedItems.removeOne(item->text());
@@ -183,7 +182,7 @@ void StoreWindow::on_resetButton_clicked() //ресет списка и кноп
     ui->resetButton->setEnabled(false);
 }
 
-void StoreWindow::clearPickedItems()
+void StoreWindow::clearPickedItems() // очищаем список выбранных товаров
 {
     int num = pickedItems.length();
     for(int i =0; i< num; i++)
